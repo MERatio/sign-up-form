@@ -9,6 +9,8 @@
 :root {
   --black-text: #111;
   --section-left-padding: 40px;
+  --green: #596d48;
+  --green-hover: #404e34;
 }
 
 html {
@@ -173,7 +175,7 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
-  background-color: #596d48;
+  background-color: var(--green);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -184,7 +186,18 @@ body {
 
 .submit-btn:hover,
 .submit-btn:active {
-  background-color: #404e34;
+  background-color: var(--green-hover);
+}
+
+.log-in-link:link,
+.log-in-link:visited {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.log-in-link:hover,
+.log-in-link:active {
+  color: var(--green-hover);
 }
 
 @media only screen and (max-width: 425px) {
