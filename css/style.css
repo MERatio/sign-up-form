@@ -186,3 +186,54 @@ body {
 .submit-btn:active {
   background-color: #404e34;
 }
+
+@media only screen and (max-width: 425px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .header {
+    flex: initial;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    width: 30px;
+  }
+
+  .header-logo-h1-container {
+    margin-top: 0;
+  }
+
+  .header-h1 {
+    font-size: 2rem;
+  }
+
+  .header-bg-cite {
+    font-size: 0.8rem;
+
+    position: static;
+    transform: translateX(0%);
+    align-self: flex-end;
+  }
+
+  .right {
+    flex: initial;
+  }
+
+  .right-top,
+  .right-middle,
+  .right-bottom {
+    padding: 20px;
+  }
+
+  .form {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px 0;
+  }
+
+  .right-bottom {
+    text-align: center;
+  }
+}
