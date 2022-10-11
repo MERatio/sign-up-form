@@ -1,0 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after,
+hr {
+  box-sizing: inherit;
+}
