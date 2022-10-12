@@ -9,6 +9,7 @@
 :root {
   --black-text: #111;
   --section-left-padding: 40px;
+  --red: #b91c1c;
   --green: #596d48;
   --green-hover: #404e34;
 }
@@ -137,7 +138,7 @@ body {
 .form {
   display: grid;
   grid-template-columns: repeat(2, 200px);
-  gap: 20px 50px;
+  gap: 10px 50px;
 }
 
 .form-group {
@@ -169,6 +170,16 @@ body {
   border-color: #1d4ed8;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
   transform: translateY(-1px);
+}
+
+.form-group .invalid-input {
+  border-color: var(--red);
+}
+
+.form-group span.error {
+  height: 0.8rem;
+  font-size: 0.8rem;
+  color: var(--red);
 }
 
 .submit-btn {
@@ -243,7 +254,7 @@ body {
 
   .form {
     grid-template-columns: repeat(1, 1fr);
-    gap: 25px 0;
+    gap: 15px 0;
   }
 
   .right-bottom {
