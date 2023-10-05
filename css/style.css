@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'norsebold';
+	src:
+		url('../assets/fonts/norse-bold-webfont.woff2') format('woff2'),
+		url('../assets/fonts/norse-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 :root {
 	--system-ui: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -15,4 +24,59 @@ body {
 *::before,
 *::after {
 	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+}
+
+.header {
+	flex: 3;
+	background-image: url('../assets/images/bg.jpg');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.logo-and-text-container {
+	padding: 10px;
+	background-color: rgb(0, 0, 0, 0.4);
+	margin-top: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-container {
+	max-width: 80px;
+}
+
+.logo-text {
+	font-family: norsebold;
+	font-size: 4rem;
+	color: #fff;
+}
+
+.bg-credit-text {
+	color: #fff;
+	text-align: center;
+}
+
+.bg-credit-text a {
+	color: inherit;
+}
+
+.bg-credit-text a:hover {
+	color: #999;
+	text-decoration: none;
+}
+
+.main {
+	flex: 7;
 }
