@@ -55,15 +55,33 @@
 					<form class="sign-up-form" id="sign-up-form">
 						<div class="form-row">
 							<label for="first-name" class="fs-6">First name</label>
-							<input type="text" id="first-name" name="first-name" required />
+							<input
+								type="text"
+								id="first-name"
+								name="first-name"
+								required
+								maxlength="255"
+							/>
 						</div>
 						<div class="form-row">
 							<label for="last-name" class="fs-6">Last name</label>
-							<input type="text" id="last-name" name="last-name" required />
+							<input
+								type="text"
+								id="last-name"
+								name="last-name"
+								required
+								maxlength="255"
+							/>
 						</div>
 						<div class="form-row">
 							<label for="email" class="fs-6">Email</label>
-							<input type="email" id="email" name="email" required />
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+								maxlength="254"
+							/>
 						</div>
 						<div class="form-row">
 							<label for="phone-number" class="fs-6">Phone number</label>
@@ -72,11 +90,20 @@
 								id="phone-number"
 								name="phone-number"
 								required
+								minlength="4"
+								maxlength="15"
 							/>
 						</div>
 						<div class="form-row">
 							<label for="password" class="fs-6">Password</label>
-							<input type="password" id="password" name="password" required />
+							<input
+								type="password"
+								id="password"
+								name="password"
+								required
+								minlength="8"
+								maxlength="16"
+							/>
 							<span class="input-error-msg fs-6"></span>
 						</div>
 						<div class="form-row">
@@ -88,6 +115,8 @@
 								id="confirm-password"
 								name="confirm-password"
 								required
+								minlength="8"
+								maxlength="16"
 							/>
 						</div>
 					</form>
