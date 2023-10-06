@@ -77,13 +77,13 @@ img {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 .logo-and-text-container {
 	padding: 10px;
 	background-color: rgb(0, 0, 0, 0.4);
 	margin-top: 30%;
+	margin-bottom: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
