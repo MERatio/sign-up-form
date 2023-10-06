@@ -191,3 +191,39 @@ input:focus {
 	color: var(--green-hover);
 	text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+	.text-center-sm {
+		text-align: center;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.logo-and-text-container {
+		margin-top: 5%;
+	}
+
+	.main-top {
+		padding-top: 50px;
+		padding: 30px 10% 30px 10%;
+	}
+
+	.main-center,
+	.main-bottom {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.sign-up-form {
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
