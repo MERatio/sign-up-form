@@ -12,6 +12,7 @@
 	--system-ui: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	--main-padding-left: 40px;
+	--red: #bc2727;
 	--green: #596d48;
 	--green-hover: #61774f;
 }
@@ -156,6 +157,16 @@ input {
 input:focus {
 	outline-color: #7e9ae8;
 	box-shadow: 2px 2px 5px 0px rgb(0, 0, 0, 0.1);
+}
+
+form.submitted input:invalid,
+.error {
+	border-color: var(--red);
+}
+
+.input-error-msg {
+	color: var(--red);
+	height: 12.3125px;
 }
 
 .main-bottom {
