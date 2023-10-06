@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sign-up Form</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
@@ -32,44 +38,60 @@
 					>
 				</p>
 			</header>
-			<main class="main">
-				<p>
-					This is not a real online service! You know you need something like
-					this in your life to help you realize your deepest dream. Sign up now
-					to get started.
-				</p>
-				<p>You know you want to.</p>
-				<div>
-					<p>Let's do this!</p>
-					<form>
-						<div>
-							<label for="first-name">First name</label>
+			<main class="main bg-gray">
+				<div class="main-top">
+					<p class="fs-3 fw-medium my-0 mb-4">
+						This is not a real online service! You know you need something like
+						this in your life to help you realize your deepest dream. <br />Sign
+						up <span class="italic">now</span> to get started.
+					</p>
+					<p class="fs-3 fw-medium my-0">
+						You <span class="italic">know</span> you want to.
+					</p>
+				</div>
+				<div class="main-center">
+					<p class="fs-3 fw-medium my-0 mb-4">Let's do this!</p>
+					<form class="sign-up-form" id="sign-up-form">
+						<div class="form-row">
+							<label for="first-name" class="fs-6">First name</label>
 							<input type="text" name="first-name" />
 						</div>
-						<div>
-							<label for="last-name">Last name</label>
+						<div class="form-row">
+							<label for="last-name" class="fs-6">Last name</label>
 							<input type="text" name="last-name" />
 						</div>
-						<div>
-							<label for="email">Email</label>
+						<div class="form-row">
+							<label for="email" class="fs-6">Email</label>
 							<input type="email" name="email" />
 						</div>
-						<div>
-							<label for="phone-number">Phone number</label>
+						<div class="form-row">
+							<label for="phone-number" class="fs-6">Phone number</label>
 							<input type="tel" name="phone-number" />
 						</div>
-						<div>
-							<label for="password">Password</label>
+						<div class="form-row">
+							<label for="password" class="fs-6">Password</label>
 							<input type="password" name="password" />
 						</div>
-						<div>
-							<label for="confirm-password">Confirm password</label>
+						<div class="form-row">
+							<label for="confirm-password" class="fs-6"
+								>Confirm password</label
+							>
 							<input type="password" name="confirm-password" />
 						</div>
-						<button type="submit">Create Account</button>
 					</form>
 				</div>
-				<p>Already have an account? <a href="#">Log in</a></p>
+				<div class="main-bottom">
+					<button
+						type="submit"
+						form="sign-up-form"
+						class="sign-up-form-submit-btn"
+					>
+						Create Account
+					</button>
+					<p class="ask-account">
+						Already have an account? <a href="#">Log in</a>
+					</p>
+				</div>
 			</main>
 		</div>
 	</body>
